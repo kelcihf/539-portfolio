@@ -1,0 +1,201 @@
+
+html, body {
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito," Roboto;
+    font-size: 1rem;
+    line-height: normal;
+    text-align: left;
+}
+/* .hero-wrap{
+    background-color: #000;
+} */
+nav .active{
+    text-decoration: underline;
+    font-weight: bold;
+    color:blue;
+}
+
+.container-fluid {
+    margin-left: 10%;
+}
+
+.hero {
+    background-image: 
+        /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+        url("../images/everest_png_background.png");   /* Photo credit: Theodor Lundqvist */
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* opacity: 0.6; */
+    /* filter: grayscale(1); */
+    filter: contrast(1);
+    margin-top: 50px;
+    margin-bottom: -60px;
+}
+
+.btn-primary{
+    background-color: black;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.hero-text {
+    justify-self: left;
+    top: 70%;
+    color: black;
+}
+.hero h1 {
+    font-size: 5rem;
+    opacity: 1.0;
+    /* text-shadow: 2px 2px #000; */
+}
+
+h1{
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 3em;
+    font-weight:300;
+    margin-top: 20px;
+
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 150;
+}
+
+.card {
+    background-color: whitesmoke;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+main {
+    margin: 10%;
+}
+footer {
+    position: fixed;
+    color: white;
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.column {
+    flex: 20%;
+    max-width: 25%;
+}
+
+.column img {
+    vertical-align: auto;
+    width:100%;
+}
+
+
+.timeline:before {
+    content: '';
+    position:absolute;
+    height:100%;
+    left:50%;
+    width:2px;
+    top:100px;
+    background:grey;
+    z-index:1;
+  }
+ 
+.timeline:before {
+    content: '';
+    position:absolute;
+    height:100%;
+    left:50%;
+    width:2px;
+    top:100px;
+    background:grey;
+    z-index:1;
+  }
+  .timeline{
+    position:relative;
+    margin: 50px auto;
+    width:1000px;
+    padding:50px 0;
+  }
+  
+  
+  .timeline ul li{
+    list-style:none;
+    box-sizing:border-box; 
+    line-height:normal;
+    position:relative;
+    width:50%;
+    padding: 40px 70px;
+  }
+  
+  .timeline ul li .timeline-item h2{
+    color:black;
+  }
+  
+  .timeline ul li:nth-child(odd){
+    float:left;
+    text-align:right;
+    clear:both; 
+  }
+  
+  .timeline ul li:nth-child(even){
+    float:right;
+    text-align:left;
+    clear:both;
+  }
+  
+  
+/* different screen size whatnot is below */
+@media all and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .timeline{
+        width:100%;
+      }
+      .timeline:before{
+        left:10px;
+      }
+      .timeline ul li:nth-child(odd),
+      .timeline ul li:nth-child(even){
+        width:100%;
+        text-align:left;
+       padding-left:20px; 
+      }
+}
+
+/* @media (max-width: 600px) {
+
+} */
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+/* need to turn off parallax  */
+}
