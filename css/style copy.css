@@ -61,24 +61,8 @@ nav .active{
     background-image: 
         /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
         url("../images/hero_timeline.jpg");   
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* opacity: 0.6; */
-    /* filter: grayscale(1); */
-    filter: contrast(1);
-    margin-top: 50px;
-    margin-bottom: -60px;
-}
-
-.heroContact {
-    background-image: 
-        /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
-        url("../images/contact_page_everest.jpg");   
-    height: 300px;
-    background-position: center;
+   height: 300px;
+        background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -93,8 +77,8 @@ nav .active{
     background-image: 
         /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
         url("../images/traffic_jam.jpg");   
-    height:300px;
-    background-position: center;
+   height:300px;
+        background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -205,16 +189,15 @@ footer {
     background:grey;
     z-index:1;
   }
+
   .timeline{
     position:relative;
     margin: 50px auto;
     width:1000px;
     padding:50px 0;
   }
+
   
-  .timeline-img{
-    width:400px;
-}
   .timeline ul li{
     list-style:none;
     box-sizing:border-box; 
@@ -228,143 +211,54 @@ footer {
     color:black;
   }
   
-  .timeline{
-    width:100%;
-  }
-  .timeline:before{
-    left:10px;
-  }
-  .timeline ul li:nth-child(odd),
-  .timeline ul li:nth-child(even){
-    width:100%;
-    text-align:left;
-    padding-left:20px; 
-  }
-
-  .timeline-item {
-      flex-wrap: wrap
-  }
-
-  form {
-      display: grid;
+  .timeline ul li:nth-child(odd){
+    float:left;
+    text-align:right;
+    clear:both; 
   }
   
-.flipcard {
-    display: none;
-}
+  .timeline ul li:nth-child(even){
+    float:right;
+    text-align:left;
+    clear:both;
+  }
 
-.parallax {
-    background-image: url("../images/everest_img_1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 500px;
-    background-size: cover;
-    width: 100%;
-
-
-}
-
+  .timeline-img{
+      width:400px;
+  }
+  
+  
 /* different screen size whatnot is below */
 
-@media screen and (min-width: 760px){
+@media all and (min-width: 760px){
 
-    .timeline ul li:nth-child(odd){
-        align-self:left;
-        text-align:right;
-        clear:both; 
+}
+@media all and (max-width: 800px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .timeline{
+        width:100%;
       }
-      
+      .timeline:before{
+        left:10px;
+      }
+      .timeline ul li:nth-child(odd),
       .timeline ul li:nth-child(even){
-        align-self:right;
+        width:100%;
         text-align:left;
-        clear:both;
-      }
-      form {
-        display: grid;
-        grid-template-columns: 1fr auto;
-    }
-    .flipcard {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 800px) {
-    .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 300px;
-        perspective: 1000px;
-      }
-      
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-        box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
-      }
-      
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-       
-      /* need active and need focus w/ n */
-      .flip-card:hover .flip-card-inner,
-      .flip-card:focus-within .flip-card-inner,
-      .flip-card:active .flip-card-inner,
-      .flip-card:focus .flip-card-inner  {
-        transform: rotateY(180deg);
-      }
-    
-      
-      
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .flip-card-back {
-        background-color: white;
-        color: black;
-        transform: rotateY(180deg);
+       padding-left:20px; 
       }
 }
-
-@media print {
-    body {
-        background-image: none;
-    }
-    .gallery {
-        display: none;
-    }
-}
-
-
 
 /* @media (max-width: 600px) {
     everything's responsive here between bootstrap and the flex items 
 } */
 
-@media (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
-    .flip-card:hover .flip-card-inner {
-            display: none;
-        }          
-    .skip a{
-        -webkit-transition: none; 
-        transition: none;       
-       }
-      header{
-        background-attachment: initial;
-      }
-    }
 /* need to turn off parallax  */
-
+}
