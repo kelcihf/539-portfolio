@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.display {
+    text-align: center;
+}
+
 img {
     max-width: 100%;
 }
@@ -330,17 +334,67 @@ footer {
 
 @media screen and (min-width: 760px){
 
-    .timeline ul li:nth-child(odd){
-        align-self:left;
-        text-align:right;
-        clear:both; 
-      }
+.timeline-item{
+    width: 50%;
+}
+.timeline:before {
+    content: '';
+    position:absolute;
+    height:100%;
+    left:50%;
+    width:2px;
+    top:100px;
+    background:grey;
+    z-index:1;
+  }
+ 
+.timeline:before {
+    content: '';
+    position:absolute;
+    height:100%;
+    left:50%;
+    width:2px;
+    top:100px;
+    background:grey;
+    z-index:1;
+  }
+
+  .timeline{
+    position:relative;
+    margin: 50px auto;
+    padding:50px 0;
+  }
+
+  
+  .timeline ul li{
+    list-style:none;
+    box-sizing:border-box; 
+    line-height:normal;
+    position:relative;
+    width:50%;
+    padding: 40px 70px;
+  }
+  
+  .timeline ul li .timeline-item h2{
+    color:black;
+  }
+  
+  .timeline ul li:nth-child(odd){
+    left: 0;
+    text-align:left;
+    clear:both; 
+  }
+  
+  .timeline ul li:nth-child(even){
+    left: 50%;
+    text-align:left;
+    clear:both;
+  }
+
+  .timeline-img{
+      width:400px;
+  }
       
-      .timeline ul li:nth-child(even){
-        align-self:right;
-        text-align:left;
-        clear:both;
-      }
       form {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
@@ -364,7 +418,7 @@ footer {
         display: none;
     }
 
-}
+
 
 .graph-container {
     display: flex;
@@ -470,4 +524,3 @@ footer {
       }
     }
 /* need to turn off parallax  */
-

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Summit Everest</title>
+</head>
+
+<body>
+  <!-- I watched a video on using bootstrap and followed along. https://www.youtube.com/watch?v=yalxT0PEx8c -->
+  <a class="skip" href="#main">Skip to Main Content</a>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">      
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> <img src="images/everest_home_link.png" alt="small mountain outline" style="width:60px;" alt="Image of mount everest and cloudscape"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trek.html">The Trek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="stories.html">Stories</a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="hero-wrap">
+      <div class="hero">
+        <div class="hero-text">
+          <!-- <h1>All About Everest</h1> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id = "main">
+<h1>Everest</h1>
+<h2>Stories from Everest</h2>
+  <div class = "container">
+    <div class = "row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Into Thin Air</h3>
+              <p class="card-text">Jon Krakauer's 1997 book tells the tale of the 1996 storm that claimed the lives of eight climbers. Find out more about this best selling novel.</p>
+              <a href="https://www.goodreads.com/book/show/1898.Into_Thin_Air" target= "_blank" class="btn btn-primary">Go to Goodreads</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Traffic Jams</h3>
+              <p class="card-text">Congestion on the mountain has been an issue as of late. Apart from the dangers posed to climbers, there is concern about the toll it takes on Everest.</p>
+              <a href="https://www.nytimes.com/2019/09/18/sports/everest-traffic-jam-photo.html" target="_blank" class="btn btn-primary">See NYT article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">A diary from the 2015 avalance</h3>
+              <p class="card-text">A 2015 earthquake triggered an avalanche that trapped over 30 Sherpas (fueling discussions around Sherpa compensation and dangers). An account from Basecamp details the story.</p>
+              <a href="https://www.nationalgeographic.com/adventure/article/150428-everest-earthquake-base-camp-nepal-himalaya-climbing-sherpa" target="_blank" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- This is where the flipcard will go -->
+  <!-- figure out where to add toggle  -->
+  <h2>Quick Facts</h2>
+  <p>FLIP CARDS WILL GO HERE</p>
+  <p>will add a toggle in the nav or just here w/ .innerhtml to change meters to feet or feet to meters</p>
+  <h2>The trek</h2>
+  <p>Climbing Everest is no easy feat. Learn more about this two-month journey and the different challenges mountaineers encounter. </p>
+  <a href="trek.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Read about the trek</a>
+  <h2>History of the mountain</h2>
+  <p>The mountain called "Mother Goddess of the World" in Tibetan, is known around the world as Everst. Named for a British surveyer named Sir George Everest, the mountain was declared to be the tallest in the world in 1841. Brave climbers have scaled the faces of Everest through time. Learn about some of the people famous for their climbs.</p>
+  <a href="history.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Read history</a>
+  <h2>Stories</h2>
+  <p>There are countless stories from climbers and news outlets about Everest. From diaries of their experience and books detailing deadly climbs, to current challenges the mountain is facing due to overcrowding, dive deeper into the stories of this infamous mountain.</p>
+  <a href="stories.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Discover stories</a>
+    </main>
+  <footer class="navbar static-bottom navbar-dark bg-dark">
+    <p>Kelci Henson-Forslund 539 &copy; 2020</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
