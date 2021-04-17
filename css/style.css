@@ -1,9 +1,40 @@
-
+* {
+    box-sizing: border-box;
+}
 html, body {
     font-family: sans-serif;
 }
 html {
     scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    margin-top: 30px;
+}
+
+#infoContainer {
+    margin-top: 200px;
+}
+
+#infoContainerSm {
+    margin-top: 100px;
+}
+.skip {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-110%);
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.skip:focus {
+    transform: translateY(0%);
 }
 
 body {
@@ -22,11 +53,10 @@ nav .active{
     color:blue;
 }
 
+
 .navbar-brand{
     margin-left: 10%;
 }
-
-
 
 .navbar p, footer p  {
     margin-left: 10%;
@@ -178,7 +208,7 @@ footer {
     color: white;
     margin-top: 30px;
 }
-
+/* 
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +219,7 @@ footer {
 .column {
     flex: 20%;
     max-width: 25%;
-}
+} */
 
 .column img {
     vertical-align: auto;
@@ -258,6 +288,27 @@ footer {
 
   form {
       display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-top: 50px;
+  }
+
+  input {
+      padding:10px;
+      border: 2px solid grey;
+      border-radius: 10px;
+
+  }
+  label {
+      font-size: 30px;
+  }
+  button {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+  }
+
+  button:hover {
+    background-color: darkblue;
   }
   
 .flipcard {
@@ -292,8 +343,23 @@ footer {
       }
       form {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 3fr 1fr;
+        font-size: 20px;
+        gap: 5px;
+        /* grid-template-columns: 1fr auto; */
     }
+    label {
+        grid-column: 1/2;
+    }
+
+    input{
+        grid-column: 2/3;
+    }
+    button {
+        grid-column: 3/4;
+        width: 200px;
+    }
+
     .flipcard {
         display: none;
     }

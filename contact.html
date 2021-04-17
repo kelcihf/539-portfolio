@@ -15,7 +15,7 @@
 <body>
   <!-- I watched a video on using bootstrap and followed along. https://www.youtube.com/watch?v=yalxT0PEx8c -->
   <a class="skip" href="#main">Skip to Main Content</a>
-  <header>
+  <header id="contactPage">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index2.html"> <img src="images/everest_home_link.png" style="width: 60px;"/> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,12 +61,50 @@
       <p>Get interesting stories directly to your inbox.</p>
     </div>
   </div>
-</div>
-<p> Fill out our contact form here:</p>
-<form>
-  <input type="email" name = "email" placeholder="Enter email here">
-  <button type = "submit">Subscribe</button>
+  
+<!-- </div>
+<h3> Subscribe to our newsletter:</h3>
+<form id= "contact" action = "/action_page.php" method="post">
+  <label id="label" for="fname">Email</label> -->
+  <!-- <input type="email" name = "email" placeholder="Enter email here" required>
+  <button type = "submit" value="Submit">Subscribe</button>
+</form> -->
+<!-- <h3> Questions, comments, dazzling praise for this website? Get in touch with us here:</h3>
+<form id = "subscribe" method="post" onsubmit="submitFunction()">
+  <label id="label" for="fname">Name</label> -->
+  <!-- <input type="name" name = "fname" placeholder="Enter first name here" required> -->
+  <!-- <label id="label" for="email">Email</label> -->
+  <!-- <input type="email" name = "email" placeholder="Enter email here" required> -->
+  <!-- <label id="label" for="text">Your message:</label> -->
+  <!-- <input type="text" name = "text" placeholder="What's up?" required> -->
+  <!-- <button type = "submit" value="Submit">Submit</button> -->
+<!-- </form>
+<h3>Subscribe to our newsletter:</h3>
+<div class="formContainer">
+  <div class="wrapper">
+    <div class="contact">
+      <div class="form">
+        <form action ="" method="post" onsubmit="submitFunction()">
+          <label id="label" for="fname">Name</label>
+          <input type="name" name="fname" placeholder="Enter first name here" required>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div id = "test">
+<form action ="" method="post" onsubmit="submitFunction()">
+  <label id="label" for="email">Email</label>
+  <input type="email" name = "email" placeholder="Enter email here" required> 
+  <button type = "submit" value="Submit">Submit</button>
+
 </form>
+</div>
+<script>
+  function submitFunction(){
+    alert("Ta-da! You'll hear from us soon. :)")
+  }
+</script>
   </main> 
   <footer class="navbar static-bottom navbar-dark bg-dark">
     <p>Kelci Henson-Forslund 539 &copy; 2020</p>
