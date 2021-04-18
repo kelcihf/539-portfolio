@@ -110,8 +110,8 @@ nav .active{
 .heroTrek {
     background-image: 
         /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
-        url("../images/kisspng-mountain-mount-everest-snowy-5b0c23d32d93d8.9690227715275222591867.png");   /* Photo credit: Theodor Lundqvist */
-    height: 300px;
+        url("../images/everest_trek_page.jpg");   /* Photo credit: Theodor Lundqvist */
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,14 +119,14 @@ nav .active{
     /* opacity: 0.6; */
     /* filter: grayscale(1); */
     filter: contrast(1);
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: -60px;
 }
 .heroHistory {
     background-image: 
         /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
         url("../images/hero_timeline.jpg");   
-    height: 300px;
+    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ nav .active{
     /* opacity: 0.6; */
     /* filter: grayscale(1); */
     filter: contrast(1);
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: -60px;
 }
 
@@ -158,7 +158,7 @@ nav .active{
     background-image: 
         /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
         url("../images/traffic_jam.jpg");   
-    height:300px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@ nav .active{
     /* opacity: 0.6; */
     /* filter: grayscale(1); */
     filter: contrast(1);
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: -60px;
 }
 .column img {
