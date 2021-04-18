@@ -346,9 +346,8 @@ footer {
     height: 500px;
     background-size: cover;
     width: 100%;
-
-
 }
+
 
 /* different screen size whatnot is below */
 
@@ -512,6 +511,19 @@ footer {
         color: black;
         transform: rotateY(180deg);
       }
+    #animation {
+        width: 300px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-image: url("../images/email_page.jpg");
+        position: realative;
+        animation-name: shape;
+        animation-duration: 5s;
+    }
+    @keyframes shape {
+        from {opacity:0;}
+        to {opacity:1;}
+    }
 }
 
  
@@ -543,4 +555,8 @@ footer {
       header{
         background-attachment: initial;
       }
+    #animation {
+        animation: none;
     }
+    }
+}
