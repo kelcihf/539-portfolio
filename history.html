@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +10,39 @@
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Everest History</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NM94FKYGM7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-NM94FKYGM7');
-</script>
 </head>
+
 <body>
   <!-- I watched a video on using bootstrap and followed along. https://www.youtube.com/watch?v=yalxT0PEx8c -->
   <a class="skip" href="#main">Skip to Main Content</a>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"> <img src="images/everest_home_link.png" style="width: 60px;"/> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trek.html">The trek</a>
-            </li>
-            <li class="nav-item">
-              <li class="nav-item active">
-              <a class="nav-link" href="history.html">History<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="stories.html">Stories </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="index.html"> <img src="images/everest_home_link.png" alt="mountain icon" style="width: 60px;" /> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trek.html">The trek</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item active">
+            <a class="nav-link" href="history.html">History<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stories.html">Stories </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="hero-wrap">
       <div class="heroHistory">
         <div class="hero-textHistory">
@@ -57,64 +52,72 @@
     </div>
   </header>
   <main id="main">
-  <div class="timeline">
-    <h1>Everest</h1>
-    <ul>
-      <li>
-        <div class="timeline-item">
-          <h2>Declared the highest peak</h2>
-          <h3>1852</h3>
-          <p>Someone realized it was a really tall mountain and said, "hey, this is a really tall mountain" and they used science to prove it. 
-          </p>
-          <img class="timeline-img" src="images/timeline_tallest.jpg" alt="Everest summit against blue sky"/>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-item">
-          <h2>First attempt at summiting</h2>
-          <h3>1922</h3>
-          <p> A british team with George Mallory attempt to climb the mountain. </p>
-          <img class="timeline-img" src="images/timeline_mallory_irvine.jpg" alt="George Mallory and Irvine"/>
+    <div class="timeline">
+      <h1>Everest</h1>
+      <ul>
+        <li>
+          <div class="timeline-item" id="animated-timeline">
+            <h2>Declared the highest peak</h2>
+            <h3>1852</h3>
+            <p>Someone realized it was a really tall mountain and said, "hey, this is a really tall mountain" and they
+              used science to prove it.
+            </p>
+            <img class="timeline-img" src="images/timeline_tallest.jpg" alt="Everest summit against blue sky" />
+          </div>
+        </li>
+        <li>
+          <div class="timeline-item">
+            <h2>First attempt at summiting</h2>
+            <h3>1922</h3>
+            <p> A british team with George Mallory attempt to climb the mountain. </p>
+            <img class="timeline-img" src="images/timeline_mallory_irvine.jpg" alt="George Mallory and Irvine" />
 
-        </div>
-      </li>
-      <li>
-        <div class="timeline-item">
-          <h2>George Mallory and Andrew Irvine disappear</h2>
-          <h3>1922</h3>
-          <p> It's unknown if they reached the top before they died.</p>
-          <img class="timeline-img" src="images/timeline_graves.jpg" alt="on-mountain grave or memorial to Mallory and Irvine after they disappear"/>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-item">
+            <h2>George Mallory and Andrew Irvine disappear</h2>
+            <h3>1922</h3>
+            <p> It's unknown if they reached the top before they died.</p>
+            <img class="timeline-img" src="images/timeline_graves.jpg"
+              alt="on-mountain grave or memorial to Mallory and Irvine after they disappear" />
 
-        </div>
-      </li>
-      <li>
-        <div class="timeline-item">
-          <h2>First summit (offically) occurs</h2>
-          <h3>1953</h3>
-          <p> Either Edmund Hillary or Tenzing Norgay summited the mountain first.</p>
-          <img class="timeline-img" src="images/first_summit.jpg" alt="Hillary and Norgay smiling together"/>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-item">
-          <h2>First woman summits</h2>
-          <h3>1975</h3>
-          <p> Junko Tabei from Japan summits Everest</p>
-          <img class="timeline-img" src="images/timeline_Junko.jpg" alt="Junko Tabei's summit"/>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-item">
+            <h2>First summit (offically) occurs</h2>
+            <h3>1953</h3>
+            <p> Either Edmund Hillary or Tenzing Norgay summited the mountain first.</p>
+            <img class="timeline-img" src="images/first_summit.jpg" alt="Hillary and Norgay smiling together" />
+          </div>
+        </li>
+        <li>
+          <div class="timeline-item">
+            <h2>First woman summits</h2>
+            <h3>1975</h3>
+            <p> Junko Tabei from Japan summits Everest</p>
+            <img class="timeline-img" src="images/timeline_Junko.jpg" alt="Junko Tabei's summit" />
 
-        </div>
-      </li>
-      <div style="clear:both;"></div>
-    </ul>
-  </div>
-</main>
+          </div>
+        </li>
+        <div style="clear:both;"></div>
+      </ul>
+    </div>
+  </main>
 
   <footer class="navbar static-bottom navbar-dark bg-dark">
     <p>Kelci Henson-Forslund 539 &copy; 2020</p>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

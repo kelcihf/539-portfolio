@@ -20,11 +20,11 @@ iframe {
     margin-top: 30px;
 }
 
-#infoContainer {
+#infoContainer-facts {
     margin-top: 200px;
 }
 
-#infoContainerSm {
+#infoContainerSm-facts {
     margin-top: 100px;
 }
 .skip {
@@ -54,9 +54,31 @@ body {
 nav .active{
     text-decoration: underline;
     font-weight: bold;
-    color:blue;
+    color: black;
 }
 
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 2px;
+    margin: 0px;
+  }
+  
+  .flex-item-infos {
+    background: #000B30;
+    padding: 5px;
+    width: 200px;
+    height: 120px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    text-wrap: wrap;
+  }
 
 .navbar-brand{
     margin-left: 10%;
@@ -288,8 +310,6 @@ footer {
     padding-left:20px; 
   }
 
-
-
   form {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
@@ -391,10 +411,11 @@ footer {
     clear:both;
   }
 
-  .timeline-img{
+
+  .timeline-img {
       width:400px;
   }
-      
+
       form {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
@@ -493,6 +514,8 @@ footer {
       }
 }
 
+ 
+ /* animation testing ends here */
 @media print {
     body {
         background-image: none;
@@ -501,8 +524,6 @@ footer {
         display: none;
     }
 }
-
-
 
 /* @media (max-width: 600px) {
     everything's responsive here between bootstrap and the flex items 
@@ -523,4 +544,3 @@ footer {
         background-attachment: initial;
       }
     }
-/* need to turn off parallax  */
