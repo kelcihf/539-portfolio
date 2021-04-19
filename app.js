@@ -26,7 +26,7 @@ var conversion_button = document.querySelector('#conversion')
 
 conversion_button.addEventListener('click', function () {
     // needs to select all elevation spans so querySelectorAll
-    var elevation = document.querySelectorAll('#elevation');
+    var elevation = document.querySelectorAll('.elevation');
 
     //    if the inner html of the button says meters then do feet instead
     var ismetric = elevation[0].innerHTML == "meters";
@@ -52,7 +52,7 @@ conversion_button.addEventListener('click', function () {
         elevation[index].innerHTML = elevation[index].innerHTML * ratio
     }
     // needs to select all elevation spans so querySelectorAll
-    var metric = document.querySelectorAll('#metric');
+    var metric = document.querySelectorAll('.metric');
     //  starting with the first item in the array then look at the number of items in the array and loop through each item
     for (var index = 0; index < metric.length; index++) {
         metric[index].innerHTML = newconversion
