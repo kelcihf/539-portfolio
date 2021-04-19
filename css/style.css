@@ -544,6 +544,45 @@ footer {
         perspective: 1000px;
       }
       
+      #cloud-one {
+          animation: moveAround 3s infinite;
+      }
+
+      @keyframes moveAround {
+          from {}
+      }
+
+    #sun {
+        animation: changeColor 10s infinite;
+  
+    }
+
+    #cloud-one {
+        animation: float 8s infinite ease-in-out;
+    }
+
+    #cloud-two {
+        animation: float2 10s infinite ease-in-out;
+    }
+
+    @keyframes changeColor {
+        0% {fill: darkred;}
+        50% {fill: orangered;}
+        100% {fill: darkred}
+    }
+
+    @keyframes float {
+        0% {transform: translateX(-40px);}
+        50% {transform: translateX(50px);}
+        100% {transform: translateX(-40px);}
+    }
+
+    @keyframes float2 {
+        0% {transform: translateX(-20px);}
+        50% {transform: translateX(50px);}
+        100% {transform: translateX(-20px);}
+    }
+
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -626,6 +665,20 @@ footer {
         background-attachment: initial;
       }
     #animation {
+        animation: none;
+    }
+
+
+    #sun {
+        animation: none;
+  
+    }
+
+    #cloud-one {
+        animation: none;
+    }
+
+    #cloud-two {
         animation: none;
     }
     }
