@@ -36,16 +36,16 @@ iframe {
     margin-top: 30px;
 }
 
-#infoContainer, #infoContainer-facts, #quick-facts {
+.infoContainer, .infoContainer-facts, #quick-facts {
     padding-top: 50px;
     margin-top: 50px;
 }
 
-#infoContainer-facts {
+.infoContainer-facts {
     margin-top: 300px;
 }
 
-#infoContainerSm-facts {
+.infoContainerSm-facts {
     margin-top: 300px;
 }
 .skip {
