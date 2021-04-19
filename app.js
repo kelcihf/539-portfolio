@@ -5,7 +5,7 @@ var desc = document.querySelector('.desc');
 var temp = document.querySelector('.temp');
 
 button.addEventListener('click', function () {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=Kathmandu,np&APPID=32d5add5e320b16f2b17350cbea8140e')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Kathmandu,np&APPID=32d5add5e320b16f2b17350cbea8140e')
         // response is an http response (so the data dictionary is being received)     
         .then(response => response.json())
         // 'data' is the json dictionary
