@@ -536,7 +536,7 @@ footer {
 .item-7 {height: 130%;}
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .flip-card {
         background-color: transparent;
         width: 300px;
